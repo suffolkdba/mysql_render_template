@@ -1,11 +1,11 @@
 services:
 - type: pserv
-  name: mysql
+  name: mysql_zeus
   plan: standard
   env: docker
-  autoDeploy: false
+  autoDeploy: true
   disk:
-    name: mysql
+    name: mysqldata
     mountPath: /var/lib/mysql
     sizeGB: 10
   envVars:
